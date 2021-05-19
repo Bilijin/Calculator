@@ -4,180 +4,273 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingHorizontal="32dp"
+    android:layout_marginVertical="16dp"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/screen"
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="32dp"
         android:paddingStart="12dp"
         android:paddingEnd="12dp"
-        android:textSize="20sp"/>
+        android:textAlignment="viewEnd"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/one"
+        style="?android:attr/borderlessButtonStyle"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="8dp"
+        android:background="@drawable/number_bg"
+        android:text="@string/one"
+        android:textColor="@color/teal_200"
+        android:textSize="24sp"
+        app:backgroundTint="@color/teal_200"
         app:layout_constraintBottom_toTopOf="@id/four"
         app:layout_constraintEnd_toStartOf="@id/two"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/screen"
-        android:text="@string/one"/>
+        app:layout_constraintTop_toBottomOf="@id/screen" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/two"
+        style="?android:attr/borderlessButtonStyle"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginHorizontal="8dp"
+        android:background="@drawable/number_bg"
+        android:text="@string/two"
+        android:textColor="@color/teal_200"
+        android:textSize="24sp"
+        app:backgroundTint="@color/teal_200"
         app:layout_constraintBottom_toBottomOf="@id/one"
         app:layout_constraintEnd_toStartOf="@id/three"
         app:layout_constraintStart_toEndOf="@id/one"
-        app:layout_constraintTop_toTopOf="@id/one"
-        android:text="@string/two"/>
+        app:layout_constraintTop_toTopOf="@id/one" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/three"
+        style="?android:attr/borderlessButtonStyle"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginHorizontal="8dp"
+        android:background="@drawable/number_bg"
+        android:text="@string/three"
+        android:textColor="@color/teal_200"
+        android:textSize="24sp"
+        app:backgroundTint="@color/teal_200"
         app:layout_constraintBottom_toBottomOf="@id/one"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/two"
-        app:layout_constraintTop_toTopOf="@id/one"
-        android:text="@string/three"/>
+        app:layout_constraintTop_toTopOf="@id/one" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/four"
+        style="?android:attr/borderlessButtonStyle"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="8dp"
+        android:background="@drawable/number_bg"
+        android:text="@string/four"
+        android:textColor="@color/teal_200"
+        android:textSize="24sp"
+        app:backgroundTint="@color/teal_200"
         app:layout_constraintBottom_toTopOf="@id/seven"
         app:layout_constraintEnd_toStartOf="@id/five"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/one"
-        android:text="@string/four"/>
+        app:layout_constraintTop_toBottomOf="@id/one" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/five"
+        style="?android:attr/borderlessButtonStyle"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginHorizontal="8dp"
+        android:background="@drawable/number_bg"
+        android:text="@string/five"
+        android:textColor="@color/teal_200"
+        android:textSize="24sp"
+        app:backgroundTint="@color/teal_200"
         app:layout_constraintBottom_toBottomOf="@id/four"
         app:layout_constraintEnd_toStartOf="@id/six"
         app:layout_constraintStart_toEndOf="@id/four"
-        app:layout_constraintTop_toTopOf="@id/four"
-        android:text="@string/five"/>
+        app:layout_constraintTop_toTopOf="@id/four" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/six"
+        style="?android:attr/borderlessButtonStyle"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginHorizontal="8dp"
+        android:background="@drawable/number_bg"
+        android:text="@string/six"
+        android:textColor="@color/teal_200"
+        android:textSize="24sp"
+        app:backgroundTint="@color/teal_200"
         app:layout_constraintBottom_toBottomOf="@id/four"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/five"
-        app:layout_constraintTop_toTopOf="@id/four"
-        android:text="@string/six"/>
+        app:layout_constraintTop_toTopOf="@id/four" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/seven"
+        style="?android:attr/borderlessButtonStyle"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="8dp"
-        app:layout_constraintBottom_toTopOf="@id/zero"
+        android:background="@drawable/number_bg"
+        android:text="@string/seven"
+        android:textColor="@color/teal_200"
+        android:textSize="24sp"
+        app:backgroundTint="@color/teal_200"
+        app:layout_constraintBottom_toTopOf="@id/plus"
         app:layout_constraintEnd_toStartOf="@id/eight"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/four"
-        android:text="@string/seven"/>
+        app:layout_constraintTop_toBottomOf="@id/four" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/eight"
+        style="?android:attr/borderlessButtonStyle"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginHorizontal="8dp"
+        android:background="@drawable/number_bg"
+        android:text="@string/eight"
+        android:textColor="@color/teal_200"
+        android:textSize="24sp"
+        app:backgroundTint="@color/teal_200"
         app:layout_constraintBottom_toBottomOf="@id/seven"
         app:layout_constraintEnd_toStartOf="@id/nine"
         app:layout_constraintStart_toEndOf="@id/seven"
         app:layout_constraintTop_toTopOf="@id/seven"
-        android:text="@string/eight"/>
+        app:layout_constraintVertical_bias="0.0" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/nine"
+        style="?android:attr/borderlessButtonStyle"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginHorizontal="8dp"
+        android:background="@drawable/number_bg"
+        android:text="@string/eight"
+        android:textColor="@color/teal_200"
+        android:textSize="24sp"
+        app:backgroundTint="@color/teal_200"
         app:layout_constraintBottom_toBottomOf="@id/seven"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/eight"
-        app:layout_constraintTop_toTopOf="@id/seven"
-        android:text="@string/eight"/>
+        app:layout_constraintTop_toTopOf="@id/seven" />
 
-    <Button
-        android:id="@+id/zero"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_margin="8dp"
-        app:layout_constraintBottom_toTopOf="@id/multiply"
-        app:layout_constraintEnd_toStartOf="@id/plus"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/seven"
-        android:text="@string/zero"/>
-
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/plus"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginHorizontal="8dp"
-        app:layout_constraintBottom_toBottomOf="@id/zero"
-        app:layout_constraintEnd_toStartOf="@id/minus"
-        app:layout_constraintStart_toEndOf="@id/zero"
-        app:layout_constraintTop_toTopOf="@id/zero"
-        android:text="@string/plus"/>
-
-    <Button
-        android:id="@+id/minus"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginHorizontal="8dp"
-        app:layout_constraintBottom_toBottomOf="@id/zero"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/plus"
-        app:layout_constraintTop_toTopOf="@id/zero"
-        android:text="@string/minus"/>
-
-    <Button
-        android:id="@+id/multiply"
+        style="?android:attr/borderlessButtonStyle"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/symbol_bg"
+        android:text="@string/plus"
+        android:textSize="24sp"
+        app:backgroundTint="@color/teal_200"
+        app:layout_constraintBottom_toTopOf="@id/multiply"
+        app:layout_constraintEnd_toStartOf="@id/zero"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/seven" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/zero"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="8dp"
+        android:background="@drawable/number_bg"
+        android:text="@string/zero"
+        android:textColor="@color/teal_200"
+        android:textSize="24sp"
+        app:backgroundTint="@color/teal_200"
+        app:layout_constraintBottom_toBottomOf="@id/plus"
+        app:layout_constraintEnd_toStartOf="@id/minus"
+        app:layout_constraintStart_toEndOf="@id/plus"
+        app:layout_constraintTop_toTopOf="@id/plus" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/minus"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="8dp"
+        android:background="@drawable/symbol_bg"
+        android:text="@string/minus"
+        android:textSize="24sp"
+        app:backgroundTint="@color/teal_200"
+        app:layout_constraintBottom_toBottomOf="@id/plus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/zero"
+        app:layout_constraintTop_toTopOf="@id/plus" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/multiply"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/symbol_bg"
+        android:text="@string/multiply"
+        android:textSize="24sp"
+        app:backgroundTint="@color/teal_200"
+        app:layout_constraintBottom_toTopOf="@id/erase"
         app:layout_constraintEnd_toStartOf="@id/divide"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/zero"
-        android:text="@string/multiply"/>
+        app:layout_constraintTop_toBottomOf="@id/plus" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/divide"
+        style="?android:attr/borderlessButtonStyle"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginHorizontal="8dp"
+        android:background="@drawable/symbol_bg"
+        android:text="@string/divide"
+        android:textSize="24sp"
+        app:backgroundTint="@color/teal_200"
         app:layout_constraintBottom_toBottomOf="@id/multiply"
         app:layout_constraintEnd_toStartOf="@id/equals"
         app:layout_constraintStart_toEndOf="@id/multiply"
-        app:layout_constraintTop_toTopOf="@id/multiply"
-        android:text="@string/divide"/>
+        app:layout_constraintTop_toTopOf="@id/multiply" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/equals"
+        style="?android:attr/borderlessButtonStyle"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginHorizontal="8dp"
+        android:background="@drawable/symbol_bg"
         android:text="@string/equals"
+        android:textSize="24sp"
+        app:backgroundTint="@color/teal_200"
         app:layout_constraintBottom_toBottomOf="@id/multiply"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/divide"
         app:layout_constraintTop_toTopOf="@id/multiply" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/erase"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginVertical="16dp"
+        android:background="@drawable/symbol_bg"
+        android:src="@drawable/ic_baseline_backspace_24"
+        android:textSize="24sp"
+        app:backgroundTint="@color/teal_200"
+        app:iconSize="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/multiply" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
